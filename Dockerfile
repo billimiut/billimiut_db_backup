@@ -6,4 +6,6 @@ RUN apt-get update && apt-get install -y \
 
 COPY backup.sh /backup.sh
 
+RUN chmod +x /backup.sh
+
 ENTRYPOINT [ "/backup.sh" ]
